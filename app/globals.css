@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+:root {
+  height: 100%;
+  scroll-behavior: smooth;
+  font-family: "Raleway", sans-serif;
+}
+
+.link-underline {
+  padding-bottom: 5px;
+  border-bottom-width: 0;
+  background-image: linear-gradient(transparent, transparent),
+    linear-gradient(#ffffff, #ffffff);
+  background-size: 0 3px;
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 0.4s ease-in-out;
+}
+
+.link-underline:hover {
+  background-size: 100% 3px;
+  background-position: 0 100%;
+}
+
+.scrolling .link-underline {
+  background-image: linear-gradient(transparent, transparent),
+    linear-gradient(#373e45, #373e45);
+}
